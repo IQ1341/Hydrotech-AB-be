@@ -17,9 +17,6 @@ const checkThresholds = async (data) => {
     if (data.ph < thresholdMap.ph.min || data.ph > thresholdMap.ph.max) {
         notifications.push(`Nilai pH (${data.ph}) diluar batas aman.`);
     }
-    if (data.do < thresholdMap.do.min || data.do > thresholdMap.do.max) {
-        notifications.push(`Nilai DO (${data.do}) diluar batas aman.`);
-    }
     if (data.temperature < thresholdMap.temperature.min || data.temperature > thresholdMap.temperature.max) {
         notifications.push(`Nilai Temperature (${data.temperature}) diluar batas aman.`);
     }

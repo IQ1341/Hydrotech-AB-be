@@ -18,7 +18,6 @@ const setAllThresholds = async (req, res) => {
         const thresholds = [
             { type: 'ec', ...ec },
             { type: 'ph', ...ph },
-            { type: 'do', ...doValue },
             { type: 'temperature', ...temperature }
         ];
 

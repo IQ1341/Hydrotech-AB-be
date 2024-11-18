@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const thresholdSchema = new mongoose.Schema({
     type: {
         type: String,
-        enum: ['ec', 'ph', 'do', 'temperature'],
+        enum: ['ec', 'ph', 'temperature'],
         required: true
     },
     min: {
