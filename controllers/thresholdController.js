@@ -12,7 +12,7 @@ const getAllThresholds = async (req, res) => {
 
 const setAllThresholds = async (req, res) => {
     try {
-        const { ec, ph, do: doValue, temperature } = req.body;
+        const { ec, ph, temperature } = req.body;
 
         // Update or create thresholds
         const thresholds = [

@@ -16,7 +16,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Koneksi ke MongoDB
-const MONGO_URI = 'mongodb://127.0.0.1:27017/hydro'; // Ganti dengan nama database Anda
+const MONGO_URI = 'mongodb://127.0.0.1:27017/hydrotech'; // Ganti dengan nama database Anda
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
